@@ -43,55 +43,56 @@ A modern, full-stack task management application built with React and powered by
 1. Clone the repository:
 ```bash
 git clone git@github.com:DGashaw/TaskMaster-React-Frontend.git
-```
 cd taskMaster
+```
 
-2. Install dependecies
-```js
+2. Install dependencies:
+```bash
 npm install
 ```
-3. Start development server
-```js
+
+3. Start the development server:
+```bash
 npm run development
 ```
-4. Open your browser and navigate to http://localhost:5173
 
-**Available Scripts:**
-- npm run development - Start the development server with hot module replacement
-- npm run build - Build the application for production
-- npm run lint - Run ESLint to check code quality
-- npm run format - Format code with Prettier
-- npm run preview - Preview the production build
+4. Open your browser and navigate to `http://localhost:5173`
 
-**Project Structure**
-```project
-  src/
-    ├── components/          # React components (Header, TaskInput, TaskList, etc.)
-    ├── store/              # Context API setup and state management
-    ├── hooks/              # Custom React hooks
-    ├── hoc/                # Higher-order components
-    ├── utility/            # Utility functions and API client
-    ├── App.jsx             # Main App component
-    └── main.jsx            # Application entry point
+## Available Scripts
+
+- `npm run development` - Start the development server with hot module replacement
+- `npm run build` - Build the application for production
+- `npm run lint` - Run ESLint to check code quality
+- `npm run format` - Format code with Prettier
+- `npm run preview` - Preview the production build
+
+## Project Structure
+
+```
+src/
+├── components/          # React components (Header, TaskInput, TaskList, etc.)
+├── store/              # Context API setup and state management
+├── hooks/              # Custom React hooks
+├── hoc/                # Higher-order components
+├── utility/            # Utility functions and API client
+├── App.jsx             # Main App component
+└── main.jsx            # Application entry point
 ```
 
-**How It Works**
+## How It Works
+
 TaskMaster uses React Context API for state management with a custom middleware pattern for handling async operations. The app communicates with a backend API to persist tasks in a database.
 
-**Key Architecture Decisions:**
-- Context API - Centralized state management
-- Middleware Pattern - Clean separation of concerns for API calls
-- Immer.js - Safe immutable state updates
-- Bootstrap Components - Consistent, professional UI
-- Contributing
-- Contributions are welcome! Please feel free to submit a Pull Request.
+### Key Architecture Decisions:
+- **Context API** - Centralized state management
+- **Middleware Pattern** - Clean separation of concerns for API calls
+- **Immer.js** - Safe immutable state updates
+- **Bootstrap Components** - Consistent, professional UI
 
-**License**
-- This project is open source and available under the MIT License.
-##
-**Feel free to customize this description with additional information such as:**
-- Your backend repository link
-- Live demo URL
-- Specific deployment instructions
-- Contributing guidelines
-- License information if different from MIT
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the MIT License.
