@@ -1,97 +1,16 @@
-# TaskMaster-React-Frontend
+# React + Vite
 
-A modern, full-stack task management application built with React and powered by a Node.js backend. TaskMaster helps you organize, track, and manage your daily tasks efficiently with a clean, intuitive user interface.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- ✅ **Create Tasks** - Quickly add new tasks to your to-do list
-- ✏️ **Mark Complete/Incomplete** - Toggle task status with a single click
-- 🗑️ **Delete Tasks** - Remove tasks you no longer need
-- 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
-- 💾 **Persistent Storage** - All tasks are saved to a backend database
-- ⚡ **Real-time Updates** - Instant feedback on all task operations
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Tech Stack
+## React Compiler
 
-**Frontend:**
-- React 19.2.6
-- React Bootstrap 2.10.10
-- Bootstrap 5.3.8
-- Vite 8.0.12
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-**State Management:**
-- React Context API
-- Custom Hooks
-- Immer 11.1.8 (immutable state updates)
+## Expanding the ESLint configuration
 
-**API Communication:**
-- Axios 1.17.0
-
-**Development Tools:**
-- ESLint 9.39.4
-- Prettier
-- React Bootstrap Icons
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone git@github.com:DGashaw/TaskMaster-React-Frontend.git
-```
-cd taskMaster
-
-2. Install dependecies
-```js
-npm install
-```
-3. Start development server
-```js
-npm run development
-```
-4. Open your browser and navigate to http://localhost:5173
-
-**Available Scripts:**
-- npm run development - Start the development server with hot module replacement
-- npm run build - Build the application for production
-- npm run lint - Run ESLint to check code quality
-- npm run format - Format code with Prettier
-- npm run preview - Preview the production build
-
-**Project Structure**
-```project
-  src/
-    ├── components/          # React components (Header, TaskInput, TaskList, etc.)
-    ├── store/              # Context API setup and state management
-    ├── hooks/              # Custom React hooks
-    ├── hoc/                # Higher-order components
-    ├── utility/            # Utility functions and API client
-    ├── App.jsx             # Main App component
-    └── main.jsx            # Application entry point
-```
-
-**How It Works**
-TaskMaster uses React Context API for state management with a custom middleware pattern for handling async operations. The app communicates with a backend API to persist tasks in a database.
-
-**Key Architecture Decisions:**
-- Context API - Centralized state management
-- Middleware Pattern - Clean separation of concerns for API calls
-- Immer.js - Safe immutable state updates
-- Bootstrap Components - Consistent, professional UI
-- Contributing
-- Contributions are welcome! Please feel free to submit a Pull Request.
-
-**License**
-- This project is open source and available under the MIT License.
-##
-**Feel free to customize this description with additional information such as:**
-- Your backend repository link
-- Live demo URL
-- Specific deployment instructions
-- Contributing guidelines
-- License information if different from MIT
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
