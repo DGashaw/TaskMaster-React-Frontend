@@ -1,12 +1,18 @@
-import './App.css'
+//import TaskContainer from "./components/TaskContainer";
+import TaskProvider from "./store/TaskProvider";
+import TaskContainer from "./components/TaskContainer";
+import Header from "./components/Header";
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-
   return (
-    <>
-      <p>Hello React</p>
-    </>
-  )
+    <TaskProvider>
+      <Header />
+      <TaskContainer />
+    </TaskProvider>
+  );
 }
 
-export default App
+export default App;
