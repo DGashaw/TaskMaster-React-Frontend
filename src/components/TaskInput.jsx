@@ -1,6 +1,5 @@
-import { useContext, useState } from "react";
-//import { TaskContext } from "./TaskContainer";
-import TaskContext from "../store/TaskContext";
+import { useState } from "react";
+import useTaskContext from "../custom_hooks/useTaskContext";
 import { Form } from "react-bootstrap";
 import Button  from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -8,7 +7,7 @@ import Col from "react-bootstrap/Col";
 
 const TaskInput = () => {
   const [task, setTask] = useState("");
-  const {_, middlewareDispatch} = useContext(TaskContext);
+  const {_, middlewareDispatch} = useTaskContext();
 
   const handleChange = (e) => {
     setTask(e.target.value);

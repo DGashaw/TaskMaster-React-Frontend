@@ -1,12 +1,11 @@
 //import { TaskContext } from "./TaskContainer";
-import { useContext } from "react";
-import TaskContext from "../store/TaskContext";
+import useTaskContext from "../custom_hooks/useTaskContext";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Trash, ArrowCounterclockwise, Check2Circle } from "react-bootstrap-icons";
 
 const TaskItem = ({ task }) => {
-  const {_, middlewareDispatch} = useContext(TaskContext);
+  const {_, middlewareDispatch} = useTaskContext();
 
   return (
     <Row className="mb-2">
